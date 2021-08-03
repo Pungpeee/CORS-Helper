@@ -22,5 +22,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: pwd    
+    - run: ls -la
     - run: npm install
     - run: npm run json-server --watch db.json --port 5000
